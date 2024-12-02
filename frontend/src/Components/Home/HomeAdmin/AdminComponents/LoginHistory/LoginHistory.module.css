@@ -1,0 +1,49 @@
+/* Container cho các nút chuyển đổi */
+/* .admin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+} */
+
+/* Đầu trang (header) */
+.admin-header {
+  width: 100%;
+  /* margin-bottom: 20px; */
+}
+
+.admin-header nav {
+  position: relative; /* Đảm bảo phần tử có thể di chuyển */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Căn chỉnh các nút lên phía trên */
+  gap: 20px;top: -20px;
+  width: 300px;
+}
+
+/* Nút chuyển đổi giữa các tab */
+.admin-header button {
+  background-color: #7d878d;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+/* Hiệu ứng hover cho nút */
+.admin-header button:hover {
+  background-color: #d20b1c;
+  transform: scale(1.05); /* Tăng kích thước nhẹ khi hover */
+}
+
+/* Nút được chọn (active) */
+.admin-header button.active {
+  background-color: #05c71f;
+  font-weight: bold;
+  color: white;
+}
+
